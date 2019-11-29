@@ -1,0 +1,1503 @@
+{
+  "settings": {
+    "name": "Lot & Fields",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "soundamp",
+      "title": "SoundAMP",
+      "styling": {
+        "primaryColor": "#78BBFB",
+        "secondaryColor": "#CCE6FE",
+        "successColor": "#666666",
+        "infoColor": "#3977AA",
+        "warningColor": "#f94176",
+        "dangerColor": "#501e89",
+        "mainFont": "Montserrat",
+        "display1Font": "Raleway",
+        "display1Size": 6,
+        "display2Font": "Raleway",
+        "display2Size": 4.2,
+        "display5Font": "Raleway",
+        "display5Size": "1.8",
+        "display6Font": "Parisienne",
+        "display6Size": "2",
+        "display7Font": "Raleway",
+        "display7Size": 1,
+        "display4Font": "Parisienne",
+        "display4Size": "3",
+        "isRoundedButtons": true,
+        "isScrollToTopButton": false,
+        "arrowColor": "#cccccc"
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.11.6",
+    "siteFonts": [
+      {
+        "css": "'Parisienne', handwriting",
+        "name": "Parisienne",
+        "url": "https://fonts.googleapis.com/css?family=Parisienne:400"
+      },
+      {
+        "css": "'Raleway', sans-serif",
+        "name": "Raleway",
+        "url": "https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      }
+    ],
+    "uniqCompNum": 21,
+    "versionPublish": "4.11.6",
+    "screenshot": "screenshot.png",
+    "favicon": "@PROJECT_PATH@/assets/images/logo-met-lettertype-yasmine-gardner-regular-128x26.png",
+    "noImageResize": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".navbar-nav": {
+              "list-style-type": "none",
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "padding-left": "0",
+              ".nav-link": {
+                "margin": ".667em 1em",
+                "font-weight": "normal",
+                "letter-spacing": "1px"
+              }
+            },
+            "@media (max-width: 991px)": {
+              "ul.navbar-nav": {
+                "-webkit-flex-direction": "column !important",
+                "flex-direction": "column !important",
+                "li": {
+                  "margin": "auto"
+                }
+              },
+              ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                "content": "''",
+                "margin-left": ".25rem",
+                "border-top": "0.35em solid",
+                "border-right": "0.35em solid transparent",
+                "border-left": "0.35em solid transparent",
+                "border-bottom": "0",
+                "top": "55%"
+              },
+              ".nav-dropdown .dropdown-menu .dropdown-item": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "display": "flex !important",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              }
+            },
+            "& when (@collapsed)": {
+              ".mbr-section-btn": {
+                "margin-bottom": "2rem"
+              },
+              "ul.navbar-nav": {
+                "-webkit-flex-direction": "column !important",
+                "flex-direction": "column !important",
+                "li": {
+                  "margin": "auto"
+                }
+              },
+              ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                "content": "''",
+                "margin-left": ".25rem",
+                "border-top": "0.35em solid",
+                "border-right": "0.35em solid transparent",
+                "border-left": "0.35em solid transparent",
+                "border-bottom": "0",
+                "top": "55%"
+              },
+              ".nav-dropdown .dropdown-menu .dropdown-item": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "display": "flex !important",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              }
+            },
+            ".nav-dropdown .dropdown-menu": {
+              "border-radius": "0",
+              "border": "0",
+              "left": "0",
+              "margin": "0",
+              "min-width": "10rem",
+              "padding-bottom": "1.25rem",
+              "padding-top": "1.25rem",
+              "position": "absolute",
+              ".dropdown-item": {
+                "font-weight": "400",
+                "line-height": "2",
+                "display": "flex",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "width": "100%",
+                "padding": ".25rem 1.5rem",
+                "clear": "both",
+                "text-align": "inherit",
+                "white-space": "nowrap",
+                "background": "0 0",
+                "border": "0"
+              },
+              ".dropdown": {
+                "position": "relative"
+              }
+            },
+            ".nav-item.dropdown": {
+              "position": "relative",
+              ".dropdown-menu": {
+                "z-index": "-1",
+                "opacity": "0",
+                "pointer-events": "none"
+              },
+              "&:hover": {
+                "& > .dropdown-menu": {
+                  "z-index": "1",
+                  "opacity": "1",
+                  "pointer-events": "all"
+                }
+              }
+            },
+            ".dropdown-menu .dropdown:hover": {
+              "& > .dropdown-menu": {
+                "z-index": "1",
+                "opacity": "1",
+                "pointer-events": "all"
+              }
+            },
+            ".link.dropdown-toggle:after": {
+              "content": "''",
+              "margin-left": ".25rem",
+              "border-top": "0.35em solid",
+              "border-right": "0.35em solid transparent",
+              "border-left": "0.35em solid transparent",
+              "border-bottom": "0"
+            },
+            ".nav-dropdown .dropdown-submenu": {
+              "top": "0"
+            },
+            ".navbar": {
+              "min-height": "90px",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "z-index": "100",
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "width": "100%",
+              "transition": "all .3s",
+              "-webkit-justify-content": "space-between",
+              "justify-content": "space-between",
+              "background": "@menuBgColor",
+              ".navbar-logo": {
+                "margin-right": ".8rem",
+                "img": {
+                  "height": "auto"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              },
+              "&.opened": {
+                "transition": "all .3s",
+                "background": "@menuBgColor !important"
+              },
+              ".dropdown-item": {
+                "padding": ".25rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "text-align": "right",
+                "display": "flex",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "-webkit-flex-basis": "auto",
+                "flex-basis": "auto",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                "button.navbar-toggler": {
+                  "display": "inline-block !important"
+                },
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "0",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1.5rem 2rem 1rem 2rem",
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                "&.opened": {
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center",
+                  "margin": "0"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "word-break": "break-word"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "0",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1rem 2rem 1rem 2rem",
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                "&.opened": {
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center",
+                  "margin": "0"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "word-break": "break-word"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "display": "flex",
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important",
+                "font-weight": "normal"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active,.dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "display": "none",
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "position": "relative",
+              "-webkit-align-self": "center",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .navbar-toggler:not(.hide) .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".nav-link,.dropdown-item": {
+              ".mbr-iconfont": {
+                "margin-right": ".2rem"
+              }
+            },
+            ".ampstart-btn": {
+              "&.hamburger": {
+                "position": "relative",
+                "margin": "auto 0",
+                "width": "30px",
+                "height": "20px",
+                "background": "none",
+                "border": "none",
+                "cursor": "pointer",
+                "z-index": "1000",
+                "&:focus": {
+                  "outline": "none"
+                },
+                "span": {
+                  "position": "absolute",
+                  "right": "0",
+                  "width": "30px",
+                  "height": "2px",
+                  "border-right": "5px",
+                  "background-color": "@hamburgerColor",
+                  "&:nth-child(1)": {
+                    "top": "0",
+                    "transition": "all .2s"
+                  },
+                  "&:nth-child(2)": {
+                    "top": "8px",
+                    "transition": "all .15s"
+                  },
+                  "&:nth-child(3)": {
+                    "top": "8px",
+                    "transition": "all .15s"
+                  },
+                  "&:nth-child(4)": {
+                    "top": "16px",
+                    "transition": "all .2s"
+                  }
+                }
+              }
+            },
+            "@media (min-width: 992px)": {
+              "& when not (@collapsed)": {
+                ".ampstart-btn,amp-sidebar": {
+                  "display": "none"
+                },
+                ".dropdown-menu .dropdown-toggle:after": {
+                  "content": "''",
+                  "border-bottom": "0.35em solid transparent",
+                  "border-left": "0.35em solid",
+                  "border-right": "0",
+                  "border-top": "0.35em solid transparent",
+                  "margin-left": "0.3rem",
+                  "margin-top": "-0.3077em",
+                  "position": "absolute",
+                  "right": "1.1538em",
+                  "top": "50%"
+                }
+              }
+            },
+            "amp-sidebar": {
+              "min-width": "260px!important",
+              "z-index": "1050!important",
+              "background-color": "@menuBgColor"
+            },
+            "amp-sidebar.open:after": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "bottom": "0",
+              "right": "0",
+              "background-color": "red"
+            },
+            ".open": {
+              "-webkit-transform": "translateX(0%) !important",
+              "transform": "translateX(0%) !important",
+              "display": "block!important"
+            },
+            ".builder-sidebar": {
+              "text-align": "right",
+              "background-color": "@menuBgColor",
+              "position": "relative",
+              "min-height": "100vh",
+              "z-index": "1030",
+              "padding": "1rem 2rem",
+              "max-width": "20rem",
+              ".dropdown": {
+                "position": "relative",
+                "&:hover": {
+                  "& > .dropdown-menu": {
+                    "position": "relative",
+                    "text-align": "center"
+                  }
+                }
+              }
+            },
+            ".sidebar": {
+              "padding": "1rem 0",
+              "margin": "0"
+            },
+            ".sidebar > li": {
+              "list-style": "none",
+              "display": "flex",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column"
+            },
+            ".sidebar a": {
+              "display": "block",
+              "text-decoration": "none",
+              "margin-bottom": "10px"
+            },
+            ".close-sidebar": {
+              "width": "30px",
+              "height": "30px",
+              "position": "relative",
+              "cursor": "pointer",
+              "background-color": "transparent",
+              "border": "none",
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "position": "absolute",
+                "left": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "-webkit-transform": "rotate(45deg)",
+                  "transform": "rotate(45deg)"
+                },
+                "&:nth-child(2)": {
+                  "-webkit-transform": "rotate(-45deg)",
+                  "transform": "rotate(-45deg)"
+                }
+              }
+            },
+            "amp-img": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "width": "~\"@{logoWidth}px\"",
+              "height": "~\"@{logoHeight}px\"",
+              "@media (max-width: 768px)": {
+                "min-height": "55px",
+                "min-width": "55px"
+              }
+            },
+            ".social": {
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "@media (max-width: 992px)": {
+                "padding-top": "2rem"
+              }
+            },
+            ".amp-iconfont": {
+              "font-size": "1.2rem",
+              "color": "@iconsColor"
+            },
+            ".iconfont-wrapper": {
+              "margin-left": "1rem",
+              "display": "inline-block",
+              "width": "1.2rem",
+              "height": "1.2rem"
+            }
+          },
+          "_name": "menu2",
+          "_customHTML": "<section class=\"menu menu2 horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main,amp-sidebar\" always-top global once=\"menu\" position-absolute>\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"80\" max=\"200\" value=\"200\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"80\" max=\"200\" value=\"91\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n\t<input type=\"checkbox\" title=\"Show Social Icons\" name=\"showSocial\" checked>\n\t<input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"2\" step=\"1\" condition=\" showSocial\">\n\t<input type=\"color\" title=\"Icon Color\" name=\"iconsColor\" value=\"#e5e5e5\" condition=\" showSocial\">\n\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n\t<select title=\"Sidebar Side\" name=\"sidebarSide\">\n\t\t<option value=\"left\">Left</option>\n\t\t<option value=\"right\" selected>Right</option>\n\t</select>\n\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#e5e5e5\">\n\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#000000\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t\n\t<nav class=\"navbar navbar-dropdown \" mbr-class=\"{'navbar-fixed-top':sticky,\n\t\t'navbar-expand-lg':!collapsed,\n\t\t'collapsed':collapsed}\">\n\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/logo-met-lettertype-yasmine-gardner-regular.jpeg\" layout=\"responsive\" width=\"77.41258741258741\" height=\"15\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo-met-lettertype-yasmine-gardner-regular.jpeg\" alt=\"Mobirise\" title>\n\t\t\t\t</amp-img>\n\t\t\t</span>\n\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">&nbsp; &nbsp; Lot &amp; Fields</a></span>\n\t\t</div>\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t<button class=\"navbar-toggler mb-2\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n\t\t\t<div class=\"hamburger\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</div>\n\t\t\t</button>\n\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-5\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t<a class=\"nav-link link text-white dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\" data-app-placeholder=\"Type Text\">home</a>\n\t\t\t\t\t<div class=\"dropdown-menu\">\n\t\t\t\t\t\t<a class=\"text-white dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Media</a>\n\t\t\t\t\t\t<a class=\"text-white dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Pers</a>\n\t\t\t\t\t</div>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tBio</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tAgenda</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Info</a>\n\t\t\t\t</li></ul>\n\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\tContact&nbsp;</a></div>\n\t\t\t<div mbr-if=\"showSocial\" class=\"social icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n\t\t\t\t<a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\">\n\t\t\t\t\t<div class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-youtube fa\"></span>\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n\t\t\t\t\t<div class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n\t\t<div class=\"hamburger\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t</div>\n\t\t</button>\n\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\" mbr-if=\"showItems||showButtons\">\n\t\t<span></span>\n\t\t<span></span>\n\t\t<span></span>\n\t\t<span></span>\n\t\t</button>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n</section>",
+          "_cid": "rJ7MNAiC08",
+          "_anchor": "menu2-b",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-section-title, .mbr-section-subtitle, .mbr-text": {
+              "margin-bottom": "1rem"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "2rem"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n\t\n\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"20\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"20\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n\t<fieldset type=\"background\" name=\"bg\">\n\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/nw-logo-met-gitaar-1920x900.jpg\" selected>\n\t\t<input type=\"color\" title=\"Background Color\" value=\"#0dd1ff\">\n\t</fieldset>\n\n\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n\t<input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"bg.type!='color' && overlay\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\t\n\t<div class=\"container\">\n\t\t<h1 class=\"mbr-section-title mbr-fonts-style align-center mbr-bold mbr-white\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\tSoundAMP\n\t\t</h1>\n\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubTitle\">\n\t\tAccelerate your site with AMP\n\t\t</h3>\n\t\t<p class=\"mbr-fonts-style mbr-text mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">\n\t\t\tFull width intro with adjustable height, background image. Click any text to edit or style it.\n\t\t</p>\n\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">\n\t\t\t\tLEARN MORE\n\t\t\t</a>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "rJ7PUoWLMI",
+          "_anchor": "header1-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity",
+              "z-index": "1",
+              "pointer-events": "none"
+            },
+            ".carousel": {
+              "position": "relative",
+              ".container": {
+                "position": "absolute",
+                "top": "50%!important",
+                "-webkit-transform": "translateY(-50%) !important",
+                "transform": "translateY(-50%) !important",
+                "left": "0",
+                "right": "0",
+                "z-index": "1"
+              }
+            },
+            "img": {
+              "width": "100%",
+              "max-height": "1200px",
+              "min-height": "900px",
+              "object-fit": "cover!important"
+            },
+            ".mbr-section-title": {
+              "margin": "3.75rem 0",
+              "@media (max-width: 662px)": {
+                "margin": "0"
+              }
+            },
+            ".mbr-section-subtitle, .mbr-text": {
+              "margin-bottom": "2rem"
+            },
+            ".image": {
+              "width": "100%",
+              "max-height": "1200px",
+              "min-height": "900px"
+            },
+            "amp-img": {
+              "width": "100%",
+              "max-height": "1200px",
+              "min-height": "900px"
+            },
+            ".amp-carousel-slide": {
+              "width": "100%",
+              "max-height": "1200px",
+              "min-height": "900px",
+              "object-fit": "cover !important"
+            },
+            "amp-carousel": {
+              "width": "100%",
+              "object-fit": "cover",
+              "height": "100%"
+            },
+            ".slider-box": {
+              "position": "relative",
+              "width": "100%",
+              "max-height": "1200px",
+              "min-height": "900px",
+              "overflow": "hidden",
+              "height": "900px"
+            },
+            ".amp-carousel-button": {
+              "width": "50px",
+              "height": "100px",
+              "outline": "none",
+              "background-color": "rgba(0, 0, 0, 0.5)",
+              "&:hover": {
+                "background-color": "rgba(0, 0, 0, 0.3)"
+              }
+            },
+            "@media (max-width: 900px)": {
+              "amp-carousel": {
+                "height": "60rem"
+              }
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section class=\"header2 slider\" group=\"Headers\" plugins=\"amp-main,amp-carousel\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n\n\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n\t<select title=\"Images\" name=\"imagesAmount\">\n\t\t<option value=\"2\" selected=\"\">2</option>\n\t\t<option value=\"3\">3</option>\n\t</select>\n\n\t<input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\">\n\t\n\t<input type=\"range\" inline=\"\" title=\"Delay\" name=\"delay\" min=\"1000\" max=\"10000\" step=\"1000\" value=\"5000\" condition=\"autoplay\">\n\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked=\"\">\n\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t<input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"slider-box\" data-autoplay=\"{{autoplay}}\" data-delay=\"{{delay}}\"><amp-carousel class=\"carousel\" height=\"3\" width=\"4\" layout=\"responsive\" type=\"slides\" loop=\"\"><div class=\"image\">\n\t\t\t\t<amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/mbr-1920x1080.jpg\" layout=\"fill\" alt=\"Mobirise\" width=\"5.333333333333333\" height=\"3\">\n\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\tLot &amp; Fields</h2>\n\t\t\t\t\t\t<h3 mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t<p class=\"mbr-text align-center mbr-fonts-style mbr-white\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate rerum ipsum tempora vero. Fugit facilis possimus assumenda ipsa, sapiente eius sunt fuga saepe nemo. Necessitatibus consequuntur, recusandae consequatur suscipit.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-md\" href=\"https://mobirise.com\">VIEW MORE</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1920x1080.jpg\" alt=\"Mobirise\" title=\"\">\n\t\t\t\t</amp-img>\n\t\t\t</div><div class=\"image\">\n\t\t\t\t<amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" mbr-class=\"{'super-hide': imagesAmount < 2}\" layout=\"fill\" alt=\"Mobirise\" width=\"4.5\" height=\"3\">\n\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-1\">\n\t\t\t\t\t\tHeader Slider\n\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t<h3 mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t<p class=\"mbr-text align-center mbr-fonts-style mbr-white\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate rerum ipsum tempora vero. Fugit facilis possimus assumenda ipsa, sapiente eius sunt fuga saepe nemo. Necessitatibus consequuntur, recusandae consequatur suscipit.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-md\" href=\"https://mobirise.com\">VIEW MORE</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1920x1280.jpg\" alt=\"Mobirise\" title=\"\">\n\t\t\t\t</amp-img>\n\t\t\t</div></amp-carousel>\n\t\t\n\t</div>\n\n</section>",
+          "_cid": "rJ7NIdgBgl",
+          "_anchor": "header2-c",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "& when not (@showTitle)": {
+              ".image": {
+                "padding-bottom": "1rem"
+              }
+            },
+            ".card": {
+              "@media (max-width: 992px)": {
+                "margin-bottom": "2rem"
+              },
+              "img": {
+                "transition": "0.5s"
+              },
+              "&:hover": {
+                "amp-img img": {
+                  "-webkit-transform": "scale(1.2)",
+                  "transform": "scale(1.2)"
+                }
+              }
+            },
+            ".image": {
+              "height": "(@picMinHeight * 1px)"
+            },
+            "amp-img": {
+              "height": "100%"
+            },
+            "img": {
+              "height": "100%",
+              "object-fit": "cover"
+            },
+            ".text-block": {
+              "padding": "2rem",
+              "background-color": "@txtBlockColor",
+              ".mbr-section-subtitle, .mbr-section-title, .date": {
+                "margin-bottom": "0.8rem"
+              },
+              ".mbr-section-btn": {
+                "margin-top": "0.8rem"
+              }
+            }
+          },
+          "_name": "news2",
+          "_customHTML": "<section class=\"news2 mbr-section\" group=\"News\" plugins=\"amp-main\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n\t<input type=\"range\" inline=\"\" title=\"Image Height\" name=\"picMinHeight\" min=\"200\" max=\"600\" step=\"50\" value=\"400\">\n\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Show Date\" name=\"showDate\" checked=\"\">\n\n\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\t<input type=\"color\" title=\"Text Block BG Color\" name=\"txtBlockColor\" value=\"#ffffff\" selected=\"\">\n\t<select title=\"Cards\" name=\"cardsAmount\">\n\t\t<option value=\"1\">1</option>\n\t\t<option value=\"2\" selected=\"\">2</option>\n\t\t<option value=\"3\">3</option>\n\t\t<option value=\"4\">4</option>\n\t</select>\n\t<fieldset type=\"background\" name=\"bg\">\n\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x874.jpg\" selected=\"\">\n\t\t<input type=\"color\" title=\"Background Color\" value=\"#000000\">\n\t</fieldset>\n\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked=\"\">\n\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t<input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t<div class=\"container\">\n\t\t<div class=\"mbr-row mbr-justify-content-center\">\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/maxresdefault-1-626x352.jpeg\" alt=\"image\" height=\"400\" width=\"245.79710144927537\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/maxresdefault-1-626x352.jpeg\" class=\"mbr-temp\" alt=\"\" title=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"text-block align-left\">\n\t\t\t\t\t<p class=\"mbr-fonts-style mbr-black mbr-text date\" mbr-theme-style=\"display-5\" mbr-if=\"showDate\" data-app-selector=\".date\">\n\t\t\t\t\t\tLotte Okkerse</p>\n\t\t\t\t\t<h5 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Lead vocals</h5>\n\t\t\t\t\t<p class=\"mbr-section-subtitle mbr-black mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\tNew hit!\n\t\t\t\t\t</p>\n\t\t\t\t\t<p class=\"mbr-section-text mbr-black mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">\n\t\t\t\t\t\tLeverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\">\n\t\t\t\t\t\t<a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n\t\t\t\t\t\t\tSee more...\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3\" mbr-if=\"cardsAmount>1\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/-mg-1705-cd-400x600.jpg\" alt=\"image\" height=\"400\" width=\"266.66666666666663\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/-mg-1705-cd-400x600.jpg\" class=\"mbr-temp\" alt=\"\" title=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"text-block align-left\">\n\t\t\t\t\t<p class=\"mbr-fonts-style mbr-black mbr-text date\" mbr-theme-style=\"display-5\" mbr-if=\"showDate\" data-app-selector=\".date\">\n\t\t\t\t\t\tRob van de Velde</p>\n\t\t\t\t\t<h5 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\tGuitar - vocals - sounds</h5>\n\t\t\t\t\t<p class=\"mbr-section-subtitle mbr-black  mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\tNew hit!\n\t\t\t\t\t</p>\n\t\t\t\t\t<p class=\"mbr-section-text mbr-black  mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">\n\t\t\t\t\t\tLeverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\">\n\t\t\t\t\t\t<a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n\t\t\t\t\t\t\tSee more...\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3\" mbr-if=\"cardsAmount>2\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/background4.jpg\" alt=\"image\" height=\"100\" width=\"149.88290398126466\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/background4.jpg\" class=\"mbr-temp\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"text-block align-left\">\n\t\t\t\t\t<p class=\"mbr-fonts-style mbr-black mbr-text date\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">\n\t\t\t\t\t\t10/04/2018\n\t\t\t\t\t</p>\n\t\t\t\t\t<h5 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\tHello from the other side – Our new hit\n\t\t\t\t\t</h5>\n\t\t\t\t\t<p class=\"mbr-section-subtitle mbr-black  mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\tNew hit!\n\t\t\t\t\t</p>\n\t\t\t\t\t<p class=\"mbr-section-text mbr-black  mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">\n\t\t\t\t\t\tLeverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\">\n\t\t\t\t\t\t<a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n\t\t\t\t\t\t\tSee more...\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3\" mbr-if=\"cardsAmount>3\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/background5.jpg\" alt=\"image\" height=\"100\" width=\"150\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/background5.jpg\" class=\"mbr-temp\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"text-block align-left\">\n\t\t\t\t\t<p class=\"mbr-fonts-style mbr-black mbr-text date\" mbr-theme-style=\"display-4\" mbr-if=\"showDate\" data-app-selector=\".date\">\n\t\t\t\t\t\t10/04/2018\n\t\t\t\t\t</p>\n\t\t\t\t\t<h5 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t\tHello from the other side – Our new hit\n\t\t\t\t\t</h5>\n\t\t\t\t\t<p class=\"mbr-section-subtitle mbr-black  mbr-light mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\t\t\tNew hit!\n\t\t\t\t\t</p>\n\t\t\t\t\t<p class=\"mbr-section-text mbr-black  mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">\n\t\t\t\t\t\tLeverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\">\n\t\t\t\t\t\t<a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n\t\t\t\t\t\t\tSee more...\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "rJ830fiKWh",
+          "_anchor": "news2-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".container": {
+              "display": "flex",
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "& when (@flexDirection)": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              },
+              "@media (max-width: 992px)": {
+                "display": "block",
+                "> *": {
+                  "margin-bottom": "1.5rem"
+                },
+                "@media (max-width: 662px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".btn": {
+              "line-height": "1"
+            },
+            ".sound-block, amp-soundcloud": {
+              "height": "~\"@{scHeight}px\" !important"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "padding-top": "20px",
+              "padding-bottom": "30px",
+              "background-color": "@cardColor",
+              "width": "calc(~\"@{picMinHeight}px +\" 32px)",
+              "transform": "translateY(~\"@{picTranslate}%\")",
+              "@media (max-width: 992px)": {
+                "-webkit-transform": "none",
+                "transform": "none",
+                "width": "100%",
+                ".image, amp-img": {
+                  "width": "100%",
+                  "height": "100%"
+                }
+              }
+            },
+            ".image": {
+              "margin": "auto",
+              "padding-bottom": "1rem",
+              "overflow": "hidden",
+              "height": "~\"@{picMinHeight}px\"",
+              "width": "~\"@{picMinHeight}px\""
+            },
+            "amp-img": {
+              "height": "~\"@{picMinHeight}px\"",
+              "width": "~\"@{picMinHeight}px\""
+            },
+            "img": {
+              "height": "100%",
+              "object-fit": "cover"
+            },
+            ".mbr-card-title": {
+              "margin-top": "3rem"
+            },
+            ".mbr-card-subtitle": {
+              "margin-bottom": "2rem"
+            },
+            ".mbr-section-title": {
+              "margin-bottom": "1rem"
+            },
+            ".mbr-section-subtitle": {
+              "margin-bottom": "2rem"
+            }
+          },
+          "_name": "soundcloud-4",
+          "_customHTML": "<section class=\"soundcloud-4\" group=\"Media\" plugins=\"amp-main,amp-soundcloud\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Reverse Content\" name=\"flexDirection\">\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\t\t\n\t\t\n\t\t<input type=\"range\" inline=\"\" title=\"Soundcloud Height\" name=\"scHeight\" min=\"400\" max=\"1000\" step=\"50\" value=\"450\">\n\n\t\t<input type=\"range\" inline=\"\" title=\"Image Height\" name=\"picMinHeight\" min=\"300\" max=\"500\" step=\"50\" value=\"400\">\n\t\t<input type=\"range\" inline=\"\" title=\"Image Translate\" name=\"picTranslate\" min=\"-50\" max=\"0\" step=\"5\" value=\"0\">\n\t\t\n\t\t<input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n\n\t\t<input type=\"text\" title=\"Playlist ID\" name=\"playlistId\" value=\"253001587\">\n\t\t<input type=\"color\" title=\"Soundcloud Color\" name=\"scColor\" value=\"#78bbfb\">\n\t\t<input type=\"color\" title=\"Card BG Color\" name=\"cardColor\" value=\"#134b7a\" selected=\"\">\n\n\t\t<fieldset type=\"background\" name=\"bg\">\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#000000\" selected=\"\">\n\t\t</fieldset>\n\t\t\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked=\"\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t\t<input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t<div class=\"container\">\n\t\t<div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12\">\n\t\t\t<div class=\"image-block\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/mbr-800x533.jpg\" alt=\"image\" height=\"400\" width=\"600.375234521576\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/mbr-800x533.jpg\" class=\"mbr-temp\" alt=\"\" title=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"title\" mbr-if=\"showTitle || showSubtitle || showButton\">\n\t\t\t\t\t<h3 class=\"mbr-card-title mbr-fonts-style align-center mbr-bold mbr-white\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-card-title\" mbr-if=\"showTitle\">\n\t\t\t\t\tSONGS</h3>\n\t\t\t\t\t<h4 class=\"mbr-card-subtitle mbr-fonts-style align-center mbr-white mbr-light\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-card-subtitle\" mbr-if=\"showSubtitle\">\n\t\t\t\t\tSubtitle\n\t\t\t\t\t</h4>\n\t\t\t\t\t<div class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-5\" mbr-if=\"showButton\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\t\tITUNES\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\t\tAMAZON\n\t\t\t\t\t\t</a></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12\">\n\t\t\t<div class=\"title\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h3 class=\"mbr-section-title mbr-fonts-style align-left mbr-bold mbr-white\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\t\t\tAlbum Title\n\t\t\t\t</h3>\n\t\t\t\t<h4 class=\"mbr-section-subtitle mbr-fonts-style align-left mbr-white mbr-light\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubtitle\">\n\t\t\t\tSubtitle\n\t\t\t\t</h4>\n\t\t\t</div>\n\t\t\t<div class=\"sound-block\">\n\t\t\t\t<amp-soundcloud class=\"mobirise-loader\" layout=\"fixed-height\" height=\"{{scHeight}}\" data-playlistid=\"{{playlistId}}\" data-color=\"78bbfb\">\n\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t</amp-soundcloud>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "rJ85K406A2",
+          "_anchor": "soundcloud-4-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "Lettertypes",
+        "order": 1,
+        "meta_descr": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".navbar-nav": {
+              "list-style-type": "none",
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "padding-left": "0",
+              ".nav-link": {
+                "margin": ".667em 1em",
+                "font-weight": "normal",
+                "letter-spacing": "1px"
+              }
+            },
+            "@media (max-width: 991px)": {
+              "ul.navbar-nav": {
+                "-webkit-flex-direction": "column !important",
+                "flex-direction": "column !important",
+                "li": {
+                  "margin": "auto"
+                }
+              },
+              ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                "content": "''",
+                "margin-left": ".25rem",
+                "border-top": "0.35em solid",
+                "border-right": "0.35em solid transparent",
+                "border-left": "0.35em solid transparent",
+                "border-bottom": "0",
+                "top": "55%"
+              },
+              ".nav-dropdown .dropdown-menu .dropdown-item": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "display": "flex !important",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              }
+            },
+            "& when (@collapsed)": {
+              ".mbr-section-btn": {
+                "margin-bottom": "2rem"
+              },
+              "ul.navbar-nav": {
+                "-webkit-flex-direction": "column !important",
+                "flex-direction": "column !important",
+                "li": {
+                  "margin": "auto"
+                }
+              },
+              ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                "content": "''",
+                "margin-left": ".25rem",
+                "border-top": "0.35em solid",
+                "border-right": "0.35em solid transparent",
+                "border-left": "0.35em solid transparent",
+                "border-bottom": "0",
+                "top": "55%"
+              },
+              ".nav-dropdown .dropdown-menu .dropdown-item": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "display": "flex !important",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              }
+            },
+            ".nav-dropdown .dropdown-menu": {
+              "border-radius": "0",
+              "border": "0",
+              "left": "0",
+              "margin": "0",
+              "min-width": "10rem",
+              "padding-bottom": "1.25rem",
+              "padding-top": "1.25rem",
+              "position": "absolute",
+              ".dropdown-item": {
+                "font-weight": "400",
+                "line-height": "2",
+                "display": "flex",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "width": "100%",
+                "padding": ".25rem 1.5rem",
+                "clear": "both",
+                "text-align": "inherit",
+                "white-space": "nowrap",
+                "background": "0 0",
+                "border": "0"
+              },
+              ".dropdown": {
+                "position": "relative"
+              }
+            },
+            ".nav-item.dropdown": {
+              "position": "relative",
+              ".dropdown-menu": {
+                "z-index": "-1",
+                "opacity": "0",
+                "pointer-events": "none"
+              },
+              "&:hover": {
+                "& > .dropdown-menu": {
+                  "z-index": "1",
+                  "opacity": "1",
+                  "pointer-events": "all"
+                }
+              }
+            },
+            ".dropdown-menu .dropdown:hover": {
+              "& > .dropdown-menu": {
+                "z-index": "1",
+                "opacity": "1",
+                "pointer-events": "all"
+              }
+            },
+            ".link.dropdown-toggle:after": {
+              "content": "''",
+              "margin-left": ".25rem",
+              "border-top": "0.35em solid",
+              "border-right": "0.35em solid transparent",
+              "border-left": "0.35em solid transparent",
+              "border-bottom": "0"
+            },
+            ".nav-dropdown .dropdown-submenu": {
+              "top": "0"
+            },
+            ".navbar": {
+              "min-height": "90px",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "z-index": "100",
+              "display": "flex",
+              "-webkit-flex-direction": "row",
+              "flex-direction": "row",
+              "width": "100%",
+              "transition": "all .3s",
+              "-webkit-justify-content": "space-between",
+              "justify-content": "space-between",
+              "background": "@menuBgColor",
+              ".navbar-logo": {
+                "margin-right": ".8rem",
+                "img": {
+                  "height": "auto"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              },
+              "&.opened": {
+                "transition": "all .3s",
+                "background": "@menuBgColor !important"
+              },
+              ".dropdown-item": {
+                "padding": ".25rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "text-align": "right",
+                "display": "flex",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "-webkit-flex-basis": "auto",
+                "flex-basis": "auto",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                "button.navbar-toggler": {
+                  "display": "inline-block !important"
+                },
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "0",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1.5rem 2rem 1rem 2rem",
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                "&.opened": {
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center",
+                  "margin": "0"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "word-break": "break-word"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "0",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1rem 2rem 1rem 2rem",
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                "&.opened": {
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center",
+                  "margin": "0"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "word-break": "break-word"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "display": "flex",
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important",
+                "font-weight": "normal"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active,.dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "display": "none",
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "position": "relative",
+              "-webkit-align-self": "center",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .navbar-toggler:not(.hide) .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".nav-link,.dropdown-item": {
+              ".mbr-iconfont": {
+                "margin-right": ".2rem"
+              }
+            },
+            ".ampstart-btn": {
+              "&.hamburger": {
+                "position": "relative",
+                "margin": "auto 0",
+                "width": "30px",
+                "height": "20px",
+                "background": "none",
+                "border": "none",
+                "cursor": "pointer",
+                "z-index": "1000",
+                "&:focus": {
+                  "outline": "none"
+                },
+                "span": {
+                  "position": "absolute",
+                  "right": "0",
+                  "width": "30px",
+                  "height": "2px",
+                  "border-right": "5px",
+                  "background-color": "@hamburgerColor",
+                  "&:nth-child(1)": {
+                    "top": "0",
+                    "transition": "all .2s"
+                  },
+                  "&:nth-child(2)": {
+                    "top": "8px",
+                    "transition": "all .15s"
+                  },
+                  "&:nth-child(3)": {
+                    "top": "8px",
+                    "transition": "all .15s"
+                  },
+                  "&:nth-child(4)": {
+                    "top": "16px",
+                    "transition": "all .2s"
+                  }
+                }
+              }
+            },
+            "@media (min-width: 992px)": {
+              "& when not (@collapsed)": {
+                ".ampstart-btn,amp-sidebar": {
+                  "display": "none"
+                },
+                ".dropdown-menu .dropdown-toggle:after": {
+                  "content": "''",
+                  "border-bottom": "0.35em solid transparent",
+                  "border-left": "0.35em solid",
+                  "border-right": "0",
+                  "border-top": "0.35em solid transparent",
+                  "margin-left": "0.3rem",
+                  "margin-top": "-0.3077em",
+                  "position": "absolute",
+                  "right": "1.1538em",
+                  "top": "50%"
+                }
+              }
+            },
+            "amp-sidebar": {
+              "min-width": "260px!important",
+              "z-index": "1050!important",
+              "background-color": "@menuBgColor"
+            },
+            "amp-sidebar.open:after": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "bottom": "0",
+              "right": "0",
+              "background-color": "red"
+            },
+            ".open": {
+              "-webkit-transform": "translateX(0%) !important",
+              "transform": "translateX(0%) !important",
+              "display": "block!important"
+            },
+            ".builder-sidebar": {
+              "text-align": "right",
+              "background-color": "@menuBgColor",
+              "position": "relative",
+              "min-height": "100vh",
+              "z-index": "1030",
+              "padding": "1rem 2rem",
+              "max-width": "20rem",
+              ".dropdown": {
+                "position": "relative",
+                "&:hover": {
+                  "& > .dropdown-menu": {
+                    "position": "relative",
+                    "text-align": "center"
+                  }
+                }
+              }
+            },
+            ".sidebar": {
+              "padding": "1rem 0",
+              "margin": "0"
+            },
+            ".sidebar > li": {
+              "list-style": "none",
+              "display": "flex",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column"
+            },
+            ".sidebar a": {
+              "display": "block",
+              "text-decoration": "none",
+              "margin-bottom": "10px"
+            },
+            ".close-sidebar": {
+              "width": "30px",
+              "height": "30px",
+              "position": "relative",
+              "cursor": "pointer",
+              "background-color": "transparent",
+              "border": "none",
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "position": "absolute",
+                "left": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "-webkit-transform": "rotate(45deg)",
+                  "transform": "rotate(45deg)"
+                },
+                "&:nth-child(2)": {
+                  "-webkit-transform": "rotate(-45deg)",
+                  "transform": "rotate(-45deg)"
+                }
+              }
+            },
+            "amp-img": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "width": "~\"@{logoWidth}px\"",
+              "height": "~\"@{logoHeight}px\"",
+              "@media (max-width: 768px)": {
+                "min-height": "55px",
+                "min-width": "55px"
+              }
+            },
+            ".social": {
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "@media (max-width: 992px)": {
+                "padding-top": "2rem"
+              }
+            },
+            ".amp-iconfont": {
+              "font-size": "1.2rem",
+              "color": "@iconsColor"
+            },
+            ".iconfont-wrapper": {
+              "margin-left": "1rem",
+              "display": "inline-block",
+              "width": "1.2rem",
+              "height": "1.2rem"
+            }
+          },
+          "_name": "menu2",
+          "_customHTML": "<section class=\"menu menu2 horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main,amp-sidebar\" always-top global once=\"menu\" position-absolute>\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Width\" inline name=\"logoWidth\" min=\"80\" max=\"200\" value=\"200\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"range\" title=\"Logo Height\" inline name=\"logoHeight\" min=\"80\" max=\"200\" value=\"91\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n\t<input type=\"checkbox\" title=\"Show Social Icons\" name=\"showSocial\" checked>\n\t<input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"2\" step=\"1\" condition=\" showSocial\">\n\t<input type=\"color\" title=\"Icon Color\" name=\"iconsColor\" value=\"#e5e5e5\" condition=\" showSocial\">\n\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n\t<select title=\"Sidebar Side\" name=\"sidebarSide\">\n\t\t<option value=\"left\">Left</option>\n\t\t<option value=\"right\" selected>Right</option>\n\t</select>\n\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#e5e5e5\">\n\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#000000\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t\n\t<nav class=\"navbar navbar-dropdown \" mbr-class=\"{'navbar-fixed-top':sticky,\n\t\t'navbar-expand-lg':!collapsed,\n\t\t'collapsed':collapsed}\">\n\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t<amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/logo-met-lettertype-yasmine-gardner-regular.jpeg\" layout=\"responsive\" width=\"77.41258741258741\" height=\"15\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo-met-lettertype-yasmine-gardner-regular.jpeg\" alt=\"Mobirise\" title>\n\t\t\t\t</amp-img>\n\t\t\t</span>\n\t\t\t<span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">&nbsp; &nbsp; Lot &amp; Fields</a></span>\n\t\t</div>\n\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t<button class=\"navbar-toggler mb-2\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n\t\t\t<div class=\"hamburger\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</div>\n\t\t\t</button>\n\t\t\t<ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-5\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\">\n\t\t\t\t\t<a class=\"nav-link link text-white dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\" data-app-placeholder=\"Type Text\">home</a>\n\t\t\t\t\t<div class=\"dropdown-menu\">\n\t\t\t\t\t\t<a class=\"text-white dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Media</a>\n\t\t\t\t\t\t<a class=\"text-white dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Pers</a>\n\t\t\t\t\t</div>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tBio</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\t\tAgenda</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t<a class=\"nav-link link text-white\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Info</a>\n\t\t\t\t</li></ul>\n\t\t\t<div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">\n\t\t\t\t\tContact&nbsp;</a></div>\n\t\t\t<div mbr-if=\"showSocial\" class=\"social icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n\t\t\t\t<a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\">\n\t\t\t\t\t<div class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-youtube fa\"></span>\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n\t\t\t\t\t<div class=\"iconfont-wrapper\">\n\t\t\t\t\t\t<span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t</div>\n\t\t\t\t</a>\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t</div>\n\t\t</div>\n\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n\t\t<div class=\"hamburger\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t</div>\n\t\t</button>\n\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\" mbr-if=\"showItems||showButtons\">\n\t\t<span></span>\n\t\t<span></span>\n\t\t<span></span>\n\t\t<span></span>\n\t\t</button>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n</section>",
+          "_cid": "rJ7MNAiC08",
+          "_anchor": "menu2-k",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
